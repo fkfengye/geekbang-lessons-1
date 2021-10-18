@@ -10,7 +10,7 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>ioc-container-overview</module>
+        <module>ch01-ioc-container-overview</module>
         <module>spring-bean</module>
         <module>dependency-lookup</module>
         <module>dependency-injection</module>
