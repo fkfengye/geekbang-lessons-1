@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>spring-bean</artifactId>
+    <artifactId>ch02-spring-bean</artifactId>
     <description>Spring Bean 基础</description>
 
     <dependencies>

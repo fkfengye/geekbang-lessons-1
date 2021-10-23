@@ -11,7 +11,7 @@
 
     <modules>
         <module>ch01-ioc-container-overview</module>
-        <module>spring-bean</module>
+        <module>ch02-spring-bean</module>
         <module>dependency-lookup</module>
         <module>dependency-injection</module>
         <module>dependency-source</module>
