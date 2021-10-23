@@ -24,6 +24,9 @@ import javax.annotation.PreDestroy;
 
 /**
  * 默认 {@link UserFactory} 实现
+ * 一、Bean的初始化
+ * 二、Bean的销毁
+ * 三、Bean的垃圾回收
  *
  * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
  * @since
@@ -58,20 +61,39 @@ public class DefaultUserFactory implements UserFactory, InitializingBean, Dispos
 
 
 
+
+
+    /**
+     * 1、基于 @PreDestroy 销毁Bean
+     */
     @PreDestroy
     public void preDestroy() {
         System.out.println("@PreDestroy : UserFactory 销毁中...");
     }
 
+
+    /**
+     * 2、通过实现Spring DisposableBean 的destroy方法来销毁Bean
+     * @throws Exception
+     */
     @Override
     public void destroy() throws Exception {
         System.out.println("DisposableBean#destroy() : UserFactory 销毁中...");
     }
 
+
+    /**
+     * 3、自定义销毁方法 doDestroy
+     */
     public void doDestroy() {
         System.out.println("自定义销毁方法 doDestroy() : UserFactory 销毁中...");
     }
 
+
+    /**
+     * 垃圾回收触发执行
+     * @throws Throwable
+     */
     @Override
     public void finalize() throws Throwable {
         System.out.println("当前 DefaultUserFactory 对象正在被垃圾回收...");

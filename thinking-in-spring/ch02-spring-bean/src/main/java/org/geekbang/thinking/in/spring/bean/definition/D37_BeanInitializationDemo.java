@@ -27,6 +27,7 @@ import org.springframework.context.annotation.Lazy;
 /**
  * 37、初始化Spring Bean: Bean初始化有哪些方式？
  * 38、延迟初始化Spring Bean：延迟初始化Bean会影响依赖注入吗
+ * 39、销毁Spring Bean: 销毁Bean的基本操作有哪些？
  *
  * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
  * @since
@@ -45,7 +46,9 @@ public class D37_BeanInitializationDemo {
         // 非延迟初始化在 Spring 应用上下文启动完成后，被初始化
         System.out.println("Spring 应用上下文已启动...");
 
+
         lookupBean(applicationContext);
+
 
         System.out.println("Spring 应用上下文准备关闭...");
         // 关闭 Spring 应用上下文
