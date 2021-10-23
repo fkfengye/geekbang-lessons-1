@@ -16,7 +16,6 @@
  */
 package org.geekbang.thinking.in.spring.bean.definition;
 
-import org.geekbang.thinking.in.spring.bean.factory.UserFactory;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /**
@@ -31,7 +30,7 @@ public class BeanGarbageCollectionDemo {
         // 创建 BeanFactory 容器
         AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext();
         // 注册 Configuration Class（配置类）
-        applicationContext.register(BeanInitializationDemo.class);
+        applicationContext.register(D37_BeanInitializationDemo.class);
         // 启动 Spring 应用上下文
         applicationContext.refresh();
         // 关闭 Spring 应用上下文

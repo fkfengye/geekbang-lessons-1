@@ -30,20 +30,33 @@ import javax.annotation.PreDestroy;
  */
 public class DefaultUserFactory implements UserFactory, InitializingBean, DisposableBean {
 
-    // 1. 基于 @PostConstruct 注解
+    /**
+     * 1. 基于 @PostConstruct 注解
+     */
     @PostConstruct
     public void init() {
         System.out.println("@PostConstruct : UserFactory 初始化中...");
     }
 
-    public void initUserFactory() {
-        System.out.println("自定义初始化方法 initUserFactory() : UserFactory 初始化中...");
-    }
 
+    /**
+     * 2、通过实现 InitializingBean 中的afterPropertiesSet来对实例进行初始化动作
+     * @throws Exception
+     */
     @Override
     public void afterPropertiesSet() throws Exception {
         System.out.println("InitializingBean#afterPropertiesSet() : UserFactory 初始化中...");
     }
+
+
+    /**
+     * 3、自定义初始化方法 initUserFactory
+     */
+    public void initUserFactory() {
+        System.out.println("自定义初始化方法 initUserFactory() : UserFactory 初始化中...");
+    }
+
+
 
     @PreDestroy
     public void preDestroy() {

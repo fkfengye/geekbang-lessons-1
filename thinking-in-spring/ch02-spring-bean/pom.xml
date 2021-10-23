@@ -6,6 +6,7 @@
         <artifactId>thinking-in-spring</artifactId>
         <groupId>org.geekbang</groupId>
         <version>1.0-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -19,15 +20,15 @@
             <artifactId>spring-context</artifactId>
         </dependency>
 
-        <!-- 复用 ioc-container-overview</artifactId> -->
+        <!-- 复用 ch01-ioc-container-overview</artifactId> -->
         <dependency>
             <groupId>${groupId}</groupId>
-            <artifactId>ioc-container-overview</artifactId>
+            <artifactId>ch01-ioc-container-overview</artifactId>
             <version>${version}</version>
         </dependency>
         <dependency>
             <groupId>org.geekbang</groupId>
-            <artifactId>ioc-container-overview</artifactId>
+            <artifactId>ch01-ioc-container-overview</artifactId>
             <version>1.0-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>

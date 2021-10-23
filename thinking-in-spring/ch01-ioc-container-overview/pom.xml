@@ -10,7 +10,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>ioc-container-overview</artifactId>
+    <artifactId>ch01-ioc-container-overview</artifactId>
 
     <dependencies>
         <!-- Spring IoC 核心依赖 -->

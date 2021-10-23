@@ -30,7 +30,7 @@
 
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>ioc-container-overview</artifactId>
+            <artifactId>ch01-ioc-container-overview</artifactId>
             <version>${project.version}</version>
         </dependency>
 
