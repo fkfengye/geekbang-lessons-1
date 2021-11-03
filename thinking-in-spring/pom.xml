@@ -13,7 +13,7 @@
         <module>ch01-ioc-container-overview</module>
         <module>ch02-spring-bean</module>
         <module>ch03-dependency-lookup</module>
-        <module>dependency-injection</module>
+        <module>ch04-dependency-injection</module>
         <module>dependency-source</module>
         <module>bean-scope</module>
         <module>bean-lifecycle</module>
